@@ -17,6 +17,7 @@
 		03B0991B278BDC810082E223 /* IntSortTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B0991A278BDC810082E223 /* IntSortTests.m */; };
 		03B09925278BDC810082E223 /* IntSortUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B09924278BDC810082E223 /* IntSortUITests.m */; };
 		03B09927278BDC810082E223 /* IntSortUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B09926278BDC810082E223 /* IntSortUITestsLaunchTests.m */; };
+		03B09935278BDC9A0082E223 /* NumberSorter.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B09934278BDC9A0082E223 /* NumberSorter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		03B09920278BDC810082E223 /* IntSortUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IntSortUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		03B09924278BDC810082E223 /* IntSortUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntSortUITests.m; sourceTree = "<group>"; };
 		03B09926278BDC810082E223 /* IntSortUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntSortUITestsLaunchTests.m; sourceTree = "<group>"; };
+		03B09933278BDC9A0082E223 /* NumberSorter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NumberSorter.h; sourceTree = "<group>"; };
+		03B09934278BDC9A0082E223 /* NumberSorter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NumberSorter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +113,8 @@
 				03B09902278BDC800082E223 /* SceneDelegate.m */,
 				03B09904278BDC800082E223 /* ViewController.h */,
 				03B09905278BDC800082E223 /* ViewController.m */,
+				03B09933278BDC9A0082E223 /* NumberSorter.h */,
+				03B09934278BDC9A0082E223 /* NumberSorter.m */,
 				03B09907278BDC800082E223 /* Main.storyboard */,
 				03B0990A278BDC810082E223 /* Assets.xcassets */,
 				03B0990C278BDC810082E223 /* LaunchScreen.storyboard */,
@@ -203,6 +208,7 @@
 				TargetAttributes = {
 					03B098FA278BDC800082E223 = {
 						CreatedOnToolsVersion = 13.2.1;
+						LastSwiftMigration = 1320;
 					};
 					03B09915278BDC810082E223 = {
 						CreatedOnToolsVersion = 13.2.1;
@@ -270,6 +276,7 @@
 				03B09900278BDC800082E223 /* AppDelegate.m in Sources */,
 				03B09911278BDC810082E223 /* main.m in Sources */,
 				03B09903278BDC800082E223 /* SceneDelegate.m in Sources */,
+				03B09935278BDC9A0082E223 /* NumberSorter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,6 +449,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -459,6 +467,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.jendter.IntSort;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -468,6 +478,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -485,6 +496,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.jendter.IntSort;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
